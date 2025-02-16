@@ -1,14 +1,14 @@
 //
-//  InstagramApp.swift
-//  Instagram
+//  InstragramApp.swift
+//  Instragram
 //
-//  Created by Oliver Gilcher on 2/16/25.
+//  Created by Oliver Gilcher on 2/15/25.
 //
 
 import SwiftUI
 
 @main
-struct InstagramApp: App {
+struct InstragramApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
