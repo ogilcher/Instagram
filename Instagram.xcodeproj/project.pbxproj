@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		22E138C52D61F07700208BEE /* AWSAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 22E138C42D61F07700208BEE /* AWSAuthCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		22E138372D61D44600208BEE /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E138C52D61F07700208BEE /* AWSAuthCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Instagram;
 			packageProductDependencies = (
+				22E138C42D61F07700208BEE /* AWSAuthCore */,
 			);
 			productName = Instagram;
 			productReference = 22E138372D61D44600208BEE /* Instagram.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 22E1382E2D61D44600208BEE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				22E138C32D61F07700208BEE /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 22E138382D61D44600208BEE /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22E138C32D61F07700208BEE /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.40.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22E138C42D61F07700208BEE /* AWSAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22E138C32D61F07700208BEE /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22E1382F2D61D44600208BEE /* Project object */;
 }
